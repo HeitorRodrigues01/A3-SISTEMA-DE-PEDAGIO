@@ -1,0 +1,195 @@
+  <!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PagaVia - Serviços</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      /* Fundo preto e fontes vermelhas */
+      body {
+        background-color: #ffffff; /* Fundo branco */
+        color: #ff4d4d; /* Fontes vermelhas */
+        font-family: Arial, sans-serif;
+      }
+
+      /* Estilo para o rodapé fixo */
+      footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #212529;
+        color: #ff4d4d; /* Fontes vermelhas */
+        text-align: center;
+        padding: 10px 0;
+        z-index: 1000;
+      }
+
+      /* Estilo para centralizar os botões no meio da tela */
+      .content-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto; /* Ajustar para que a altura não sobreponha o conteúdo */
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 0;
+      }
+
+      .plan-card {
+        margin-top: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background-color: #000000; /* Card de plano com fundo escuro */
+      }
+
+      /* Alterando título e texto para vermelho dentro dos planos */
+      .plan-card h3, .plan-card p {
+        color: #ff4d4d;
+      }
+
+      .plan-card .btn {
+        margin-top: 10px;
+        border-radius: 20px; 
+      }
+
+      /* Estilo para o cabeçalho */
+      header {
+        margin-bottom: 40px;
+        background-color: #222222;
+        color: #ff4d4d; /* Fontes vermelhas */
+      }
+
+      .navbar {
+        background-color: #000000; /* Navbar preta */
+      }
+
+      .navbar-brand, .navbar-nav .nav-link {
+        color: #595a5c; /* Fontes vermelhas para os links de navegação */
+      }
+
+      .navbar-nav .nav-link:hover {
+        color: #ff1a1a; /* Efeito de hover para os links */
+      }
+
+      /* Estilo para garantir que os planos fiquem bem distribuídos */
+      .plan-card ul {
+        color: #ff4d4d; /* Texto da lista nos planos em vermelho */
+      }
+      .plan-card strong {
+        color: #ffd700; /* Preço destacado em dourado */
+      }
+
+      /* Efeito hover nos planos */
+      .plan-card:hover {
+        transform: translateY(-10px); /* Move o plano para cima */
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Aumenta o efeito de sombra */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/">PagaVia</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="/">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="/servicos">Serviços</a></li>
+            <li class="nav-item"><a class="nav-link" href="/membros">Membros</a></li>
+            <li class="nav-item"><a class="nav-link" href="/fale-conosco">Contato</a></li>
+            <li class="nav-item"><a class="nav-link" href="/sobre">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="/area-restrita">Área Restrita</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="text-center py-4">
+      <h1>PagaVia</h1>
+      <p>Veja como a PagaVia pode facilitar sua viagem</p>
+    </header>
+
+    <!-- Conteúdo Centralizado -->
+    <section class="content-center">
+      <div>
+        <h2 class="text-danger">Automação de Pedágios</h2>
+        <p>Com nossa tecnologia de pagamento automático, sua viagem fica muito mais fácil e rápida.</p>
+        <button class="btn btn-danger btn-lg rounded-3">Saiba Mais</button>
+      </div>
+
+      <!-- Planos Comerciais -->
+      <div class="container py-5">
+        <h2 class="text-warning mb-4">Planos Comerciais para Empresas</h2>
+        <div class="row justify-content-center">
+          <!-- Plano Clássico -->
+          <div class="col-md-4 plan-card">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Clássico</h3>
+                <p class="card-text">Mais vendido. Pague 1, ganhe 15.</p>
+                <ul>
+                  <li>✔ Pedágios</li>
+                  <li>✔ Estacionamentos</li>
+                  <li>✔ Abastecimentos</li>
+                  <li>✔ Drive-thrus</li>
+                  <li>✘ Seguros</li>
+                </ul>
+                <p><strong>R$39,90 no 1° mês</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Plano Completo -->
+          <div class="col-md-4 plan-card">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Completo</h3>
+                <p class="card-text">Com Seguros. 90% OFF por 9 meses.</p>
+                <ul>
+                  <li>✔ Tudo do plano Clássico</li>
+                  <li>✔ Assistência Guincho 24h</li>
+                  <li>✔ Socorro mecânico até 40km</li>
+                  <li>✔ Seguro Acidentes Pessoais</li>
+                  <li>✔ Alerta de débitos e mais</li>
+                </ul>
+                <p><strong>R$5,90 até o 9º mês</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Plano Flex Pedágio -->
+          <div class="col-md-4 plan-card">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Flex Pedágio</h3>
+                <p class="card-text">+20% OFF por 12 meses.</p>
+                <ul>
+                  <li>✔ Pedágios</li>
+                  <li>✔ Estacionamento (2 dias/mês)</li>
+                  <li>✘ Abastecimento</li>
+                  <li>✘ Drive-thru</li>
+                  <li>✘ Seguros</li>
+                </ul>
+                <p><strong>De R$25,90 por R$19,90 no mês que usar</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 PagaVia. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>

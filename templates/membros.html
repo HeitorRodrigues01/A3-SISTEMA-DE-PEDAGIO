@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PagaVia - Membros do Grupo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Efeito hover nos nomes dos membros */
+    .membro {
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .membro:hover {
+      color: #ff6347; /* Cor ao passar o mouse */
+      transform: scale(1.1); /* Aumenta um pouco o nome */
+    }
+
+    /* Estilo de destaque para a imagem do membro */
+    .membro:hover + .membro-info {
+      background-color: rgba(255, 99, 71, 0.2); /* Fundo em tom suave para destaque */
+      padding: 10px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="bg-primary text-white text-center py-4">
+    <h1>Nosso Time</h1>
+    <p>Conheça as pessoas por trás da PagaVia</p>
+  </header>
+
+  <!-- Navegação -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/">PagaVia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="/servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="/membros">Membros</a></li>
+          <li class="nav-item"><a class="nav-link" href="/fale-conosco">Contato</a></li>
+          <li class="nav-item"><a class="nav-link" href="/sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="/area-restrita">Área Restrita</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Membros -->
+  <section class="container py-5">
+    <div class="row text-center">
+      <!-- Membro 1 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <img src="https://media-gig4-2.cdn.whatsapp.net/v/t61.24694-24/467977455_928281485551494_5117798741214399383_n.jpg?ccb=11-4&oh=01_Q5AaIKjUD-EqpuXbBoTU1SvBN0qun0KetMOeqtEhC5QmcWpH&oe=675A289D&_nc_sid=5e03e0&_nc_cat=104" class="rounded-circle mb-3" alt="Giovanna Marcelle" width="150" height="150">
+        <h3 class="text-primary membro">Giovanna Marcelle Mendes Batista</h3>
+        <p class="membro-info">Desenvolvedor Front-End com foco em soluções automatizadas.</p>
+      </div>
+
+      <!-- Membro 2 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <img src="https://media-gig4-2.cdn.whatsapp.net/v/t61.24694-24/464611319_1069085131425157_6591711735540094040_n.jpg?stp=dst-jpg_tt6&ccb=11-4&oh=01_Q5AaIMsWBCgZez108sJBhMyPRalLql3vrhCLLY3Qt4J-B69K&oe=6759EFFA&_nc_sid=5e03e0&_nc_cat=109" class="rounded-circle mb-3" alt="Pedro Alvim" width="150" height="150">
+        <h3 class="text-warning membro">Pedro Alvim Bastos da Silva</h3>
+        <p class="membro-info">Desenvolvedor Front-End, trazendo design inovador para nossos sistemas.</p>
+      </div>
+
+      <!-- Membro 3 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <img src="https://media-gig4-2.cdn.whatsapp.net/v/t61.24694-24/423687096_884791013326541_4014640668194376853_n.jpg?stp=dst-jpg_tt6&ccb=11-4&oh=01_Q5AaIOS761egZZmCk6WtJ5QOn2bzJljQ-S_oW9jXLpA6pThA&oe=675A12EF&_nc_sid=5e03e0&_nc_cat=103" class="rounded-circle mb-3" alt="Richardson Augusto" width="150" height="150">
+        <h3 class="text-danger membro">Richardson Augusto Santos Rodrigues</h3>
+        <p class="membro-info">Sem Cargo ainda</p>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <!-- Membro 4 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <img src="https://media-gig4-2.cdn.whatsapp.net/v/t61.24694-24/423687096_884791013326541_4014640668194376853_n.jpg?stp=dst-jpg_tt6&ccb=11-4&oh=01_Q5AaIOS761egZZmCk6WtJ5QOn2bzJljQ-S_oW9jXLpA6pThA&oe=675A12EF&_nc_sid=5e03e0&_nc_cat=103" class="rounded-circle mb-3" alt="Heitor Rodrigues" width="150" height="150">
+        <h3 class="text-danger membro">Heitor Rodrigues de Sousa</h3>
+        <p class="membro-info">Desenvolvedor Back-End, trazendo sistema simples e inovador.</p>
+      </div>
+
+      <!-- Membro 5 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <img src="https://via.placeholder.com/150" class="rounded-circle mb-3" alt="Isadora" width="150" height="150">
+        <h3 class="text-danger membro">Isadora</h3>
+        <p class="membro-info">Desenvolvedor e conexão com Banco de Dados.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 PagaVia. Todos os direitos reservados.</p>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

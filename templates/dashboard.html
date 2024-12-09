@@ -1,0 +1,125 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PagaVia - Dashboard Admin</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="bg-primary text-white text-center py-4">
+    <h1>Painel de Administração</h1>
+    <p>Área exclusiva para administradores gerenciarem o sistema PagaVia</p>
+  </header>
+
+  <!-- Navegação -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/">PagaVia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="/servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="/membros">Membros</a></li>
+          <li class="nav-item"><a class="nav-link" href="/fale-conosco">Contato</a></li>
+          <li class="nav-item"><a class="nav-link" href="/sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="/area-restrita">Área Restrita</a></li>
+          <li class="nav-item"><a class="nav-link" href="/dashboard">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="/">Sair</a></li> <!-- Link para logout -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo do Dashboard Admin -->
+  <section class="container py-5">
+    <div class="row">
+      <!-- Menu Lateral -->
+      <div class="col-md-3">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action active">Painel Principal</a>
+          <a href="usuarios.html" class="list-group-item list-group-item-action">Gerenciar Usuários</a>
+          <a href="servicos.html" class="list-group-item list-group-item-action">Gerenciar Serviços</a>
+          <a href="relatorios.html" class="list-group-item list-group-item-action">Relatórios</a>
+          <a href="configuracoes.html" class="list-group-item list-group-item-action">Configurações</a>
+          <a href="notificacoes.html" class="list-group-item list-group-item-action">Notificações</a>
+        </div>
+      </div>
+
+      <!-- Área Principal do Dashboard -->
+      <div class="col-md-9">
+        <div class="card shadow">
+          <div class="card-body">
+            <h3 class="card-title">Bem-vindo, Admin!</h3>
+            <p class="card-text">Aqui você pode gerenciar os serviços, usuários, relatórios e configurações da PagaVia.
+            </p>
+
+            <!-- Estatísticas -->
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card bg-info text-white mb-3">
+                  <div class="card-body">
+                    <h5 class="card-title">Total de Usuários</h5>
+                    <p class="card-text">1,200 usuários cadastrados</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card bg-warning text-white mb-3">
+                  <div class="card-body">
+                    <h5 class="card-title">Serviços Ativos</h5>
+                    <p class="card-text">5 serviços ativos no sistema</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card bg-success text-white mb-3">
+                  <div class="card-body">
+                    <h5 class="card-title">Transações Recentes</h5>
+                    <p class="card-text">230 transações realizadas no último mês</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Atividades Recentes -->
+            <h5 class="mt-4">Atividades Recentes</h5>
+            <ul>
+              <li>Usuário "João" fez a atualização de sua assinatura para o plano Completo.</li>
+              <li>Novos relatórios de pedágio foram gerados.</li>
+              <li>A configuração de notificações foi alterada para alertas diários.</li>
+            </ul>
+
+            <!-- Links Rápidos -->
+            <h5 class="mt-4">Links Rápidos</h5>
+            <ul>
+              <li><a href="usuarios.html">Gerenciar Usuários</a></li>
+              <li><a href="relatorios.html">Ver Relatórios</a></li>
+              <li><a href="servicos.html">Configurar Serviços</a></li>
+              <li><a href="configuracoes.html">Configurações de Sistema</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 PagaVia. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
